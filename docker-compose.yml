@@ -1,0 +1,12 @@
+services:
+  orchestrator:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      # リポジトリをマウント（worktree操作用）
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=production
