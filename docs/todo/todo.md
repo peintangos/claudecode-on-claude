@@ -10,3 +10,7 @@
 - [x] Step 6: ポーリング・ワーカープール・エントリポイント（worker-pool.ts, poller.ts, index.ts）
 - [x] Step 7: PRレビュー対応ハンドラー（review-handler.ts）
 - [x] Step 8: CLAUDE.md + デプロイ設定（Dockerfile, docker-compose.yml）
+
+## バグ修正
+
+- [ ] dotenv を追加して .env ファイルを読み込むようにする

@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { resolve } from "node:path";
 import { loadConfig } from "./config.js";
 import { logger, createChildLogger } from "./logger.js";

@@ -1,0 +1,21 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "teammateMode": "tmux",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/check-docs-update.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
